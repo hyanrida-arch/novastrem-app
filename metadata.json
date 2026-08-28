@@ -1,0 +1,6 @@
+{
+  "name": "NovaStream",
+  "description": "Modern IPTV & VOD streaming client with Live TV, Movies, Series, EPG, Favorites, Watch History and Downloads.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

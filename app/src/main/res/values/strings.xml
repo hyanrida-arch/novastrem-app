@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">NovaStream</string>
+    <string name="app_tagline">Your Universe of Entertainment</string>
+    <string name="login_title">Sign in to NovaStream</string>
+    <string name="login_subtitle">Sign in to access Live TV, Movies &amp; Series</string>
+    <string name="demo_account_title">Try Quick Demo Account</string>
+    <string name="demo_account_subtitle">Instant access with pre-loaded Live TV, Movies &amp; Series</string>
+    <string name="login_xtream_tab">Xtream Codes API</string>
+    <string name="login_m3u_tab">M3U Playlist URL</string>
+    <string name="field_profile_name">Profile Name (Optional)</string>
+    <string name="field_server_url">Server URL (http://domain:port/)</string>
+    <string name="field_username">Username</string>
+    <string name="field_password">Password</string>
+    <string name="field_m3u_url">M3U Playlist URL</string>
+    <string name="field_playlist_name">Playlist Name (Optional)</string>
+    <string name="button_login">Login</string>
+    <string name="button_connect_xtream">CONNECT TO XTREAM CODES</string>
+    <string name="button_connect_m3u">CONNECT TO PLAYLIST</string>
+    <string name="remember_me">Remember me</string>
+    <string name="section_home">Home</string>
+    <string name="section_live_tv">Live TV</string>
+    <string name="section_movies">Movies</string>
+    <string name="section_series">Series</string>
+    <string name="section_settings">Settings</string>
+    <string name="continue_watching">Continue Watching</string>
+    <string name="favorites">Favorites</string>
+    <string name="downloads">Downloads</string>
+    <string name="search">Search</string>
+    <string name="watch_history">Watch History</string>
+    <string name="profile">Profile</string>
+    <string name="menu">Menu</string>
+</resources>

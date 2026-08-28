@@ -1,0 +1,72 @@
+name: novastream
+description: "NovaStream — a full-featured IPTV client (Xtream Codes & M3U) built with Flutter."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.12.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+  # Only needed for the Settings screen's language toggle (Material/Cupertino
+  # widget translations + RTL support when switching to Arabic).
+  flutter_localizations:
+    sdk: flutter
+
+  # ---- State management ----
+  flutter_riverpod: ^2.6.1
+
+  # ---- Networking ----
+  dio: ^5.7.0
+
+  # ---- Video playback (m3u8 / mp4 / mkv / ts) ----
+  # VLC-backed player gives far more robust codec/container support than the
+  # stock video_player for live IPTV streams (MPEG-TS, exotic H.265, etc).
+  flutter_vlc_player: ^7.4.3
+
+  # ---- Local storage (session, favorites, cached playlists, settings) ----
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+  shared_preferences: ^2.3.3
+  # Where "Clear Cache" on the Settings screen actually deletes files from.
+  path_provider: ^2.1.4
+  # Backs cached_network_image's disk/memory cache — imported directly so
+  # Settings can call DefaultCacheManager().emptyCache().
+  flutter_cache_manager: ^3.4.1
+
+  # ---- Utilities ----
+  equatable: ^2.0.5
+  cached_network_image: ^3.4.1
+  connectivity_plus: ^6.1.0
+  logger: ^2.5.0
+  intl: ^0.20.2
+  # SHA-256 hashing for the Parental Control PIN — never store it as plaintext.
+  crypto: ^3.0.5
+
+  # UI polish
+  cupertino_icons: ^1.0.8
+  google_fonts: ^6.2.1
+  shimmer: ^3.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/icons/
+
+  # To register the NovaStream wordmark/logo font, drop the .ttf files into
+  # assets/fonts/ and uncomment below.
+  # fonts:
+  #   - family: NovaStream
+  #     fonts:
+  #       - asset: assets/fonts/NovaStream-Regular.ttf
+  #       - asset: assets/fonts/NovaStream-Bold.ttf
+  #         weight: 700
